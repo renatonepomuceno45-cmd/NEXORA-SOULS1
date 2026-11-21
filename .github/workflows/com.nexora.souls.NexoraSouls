@@ -1,0 +1,16 @@
+name: NexoraSouls
+version: 1.1.0
+main: com.nexora.souls.NexoraSouls
+api-version: '1.21'
+author: NEXORA
+description: Economia de almas, PvP, recompensas e loja RPG do NEXORA
+commands:
+  almas:
+    description: Mostra seu saldo ou administra almas
+    usage: /almas [dar|retirar|definir] [jogador] [quantidade]
+  loja:
+    description: Abre a loja do NEXORA
+permissions:
+  nexorasouls.admin:
+    description: Permite administrar saldos de almas
+    default: op
