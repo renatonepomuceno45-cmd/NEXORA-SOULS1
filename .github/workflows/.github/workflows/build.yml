@@ -1,0 +1,28 @@
+name: Compilar NEXORA SOULS
+
+on:
+  workflow_dispatch:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+      - name: Compilar
+        run: mvn --batch-mode --no-transfer-progress clean package
+      - name: Disponibilizar JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: NEXORA-SOULS-JAR
+          path: target/*.jar
+          if-no-files-found: error
+          
