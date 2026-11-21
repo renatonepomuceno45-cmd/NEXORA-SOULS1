@@ -1,0 +1,75 @@
+mob-rewards:
+  default: 1
+  ZOMBIE: 1
+  SKELETON: 2
+  CREEPER: 3
+  ENDERMAN: 5
+  BLAZE: 4
+  WARDEN: 30
+
+pvp-transfer-cooldown-seconds: 300
+
+shop:
+  construction:
+    stone:
+      material: STONE
+      name: Pedra
+      amount: 16
+      rarity: Comum
+      price: 2
+    sea_lantern:
+      material: SEA_LANTERN
+      name: Lanterna do mar
+      amount: 4
+      rarity: Raro
+      price: 35
+  combat:
+    iron_sword:
+      material: IRON_SWORD
+      name: Espada de ferro
+      rarity: Comum
+      price: 20
+    sharp_diamond_sword:
+      material: DIAMOND_SWORD
+      name: Espada afiada
+      rarity: Épico
+      price: 150
+      enchants:
+        sharpness: 3
+        unbreaking: 2
+  mining:
+    iron_pickaxe:
+      material: IRON_PICKAXE
+      name: Picareta de ferro
+      rarity: Comum
+      price: 25
+    efficiency_diamond_pickaxe:
+      material: DIAMOND_PICKAXE
+      name: Picareta veloz
+      rarity: Raro
+      price: 120
+      enchants:
+        efficiency: 3
+        unbreaking: 2
+    fortune_pickaxe:
+      material: DIAMOND_PICKAXE
+      name: Picareta da fortuna
+      rarity: Lendário
+      price: 350
+      enchants:
+        fortune: 3
+        efficiency: 4
+  survival:
+    golden_apple:
+      material: GOLDEN_APPLE
+      name: Maçã dourada
+      amount: 2
+      rarity: Incomum
+      price: 30
+    ender_pearl:
+      material: ENDER_PEARL
+      name: Pérola do ender
+      amount: 4
+      rarity: Incomum
+      price: 24
+      
